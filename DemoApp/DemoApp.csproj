@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup Label="Package">
+		<OutputType>Exe</OutputType>
+		<TargetFramework>net8.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+	</PropertyGroup>
+
+	<ItemGroup Label="Package references">
+		<PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="9.0.8" />
+		<PackageReference Include="Microsoft.Extensions.Hosting" Version="9.0.8" />
+		<PackageReference Include="Testcontainers" Version="4.6.0" />
+		<PackageReference Include="Testcontainers.MsSql" Version="4.6.0" />
+	</ItemGroup>
+
+	<ItemGroup Label="Project references">
+		<ProjectReference Include="..\CoreSharp.Outbox\CoreSharp.Outbox.csproj" />
+	</ItemGroup>
+
+</Project>

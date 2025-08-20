@@ -1,0 +1,11 @@
+<PropertyGroup>
+	<FineCodeCoverage>
+		<Enabled>True</Enabled>
+		<RunInParallel>True</RunInParallel>
+		<HideFullyCovered>True</HideFullyCovered>
+		<IncludeTestAssembly>False</IncludeTestAssembly>
+		<Exclude>
+			[*Test*]*
+		</Exclude>
+	</FineCodeCoverage>
+</PropertyGroup>

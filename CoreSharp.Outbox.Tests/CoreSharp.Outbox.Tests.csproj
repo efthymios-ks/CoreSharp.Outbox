@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup Label="Package">
+		<AssemblyName>CoreSharp.Outbox.Tests</AssemblyName>
+	</PropertyGroup>
+
+	<ItemGroup Label="Package references">
+		<PackageReference Include="AutoFixture" Version="4.18.1" />
+		<PackageReference Include="AutoFixture.AutoNSubstitute" Version="4.18.1" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="9.0.8" />
+		<PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.14.1" />
+		<PackageReference Include="NSubstitute" Version="5.3.0" />
+		<PackageReference Include="Testcontainers" Version="4.6.0" />
+		<PackageReference Include="Testcontainers.MsSql" Version="4.6.0" />
+		<PackageReference Include="xunit" Version="2.9.3" />
+		<PackageReference Include="xunit.analyzers" Version="1.24.0">
+		  <PrivateAssets>all</PrivateAssets>
+		  <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
+		<PackageReference Include="xunit.runner.visualstudio" Version="3.1.4">
+		  <PrivateAssets>all</PrivateAssets>
+		  <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
+	</ItemGroup>
+
+	<ItemGroup Label="Project references">
+		<ProjectReference Include="..\CoreSharp.Outbox\CoreSharp.Outbox.csproj" />
+	</ItemGroup>
+</Project>

@@ -1,0 +1,36 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup Label="Package">
+		<Title>CoreSharp.Outbox</Title>
+		<Authors>Efthymios Koktsidis</Authors>
+		<Company>Efthymios Koktsidis</Company>
+		<Version>8.0.4</Version>
+		<Description>Outbox pattern implemented with EF Core</Description>
+		<PackageReleaseNotes>-Initial release</PackageReleaseNotes>
+		<PackageLicenseExpression>MIT</PackageLicenseExpression>
+		<PackageProjectUrl>https://github.com/efthymios-ks/CoreSharp.Outbox</PackageProjectUrl>
+		<RepositoryUrl>https://github.com/efthymios-ks/CoreSharp.Outbox</RepositoryUrl>
+		<RepositoryType>git</RepositoryType>
+		<PackageReadmeFile>README.md</PackageReadmeFile>
+		<PackageIcon>icon.png</PackageIcon>
+		<IncludeSymbols>true</IncludeSymbols>
+		<SymbolPackageFormat>snupkg</SymbolPackageFormat>
+	</PropertyGroup>
+
+	<ItemGroup Label="Package references">
+		<PackageReference Include="Microsoft.EntityFrameworkCore" Version="9.0.8" />
+		<PackageReference Include="Microsoft.Extensions.Hosting.Abstractions" Version="9.0.8" />
+	</ItemGroup>
+
+	<ItemGroup Label="Assets">
+		<None Include="..\icon.png">
+			<Pack>True</Pack>
+			<PackagePath>\</PackagePath>
+		</None>
+		<None Include="..\README.md">
+			<Pack>True</Pack>
+			<PackagePath>\</PackagePath>
+		</None>
+	</ItemGroup>
+
+</Project>
